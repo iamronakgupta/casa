@@ -21,7 +21,6 @@ jobs:
   rspec_parallel:
     name: RSpec Groups ${{ inputs.groups }}
     runs-on: ubuntu-latest
-    timeout-minutes: 4
     env:
       RAILS_ENV: test
       BUNDLE_WITHOUT: "development"
